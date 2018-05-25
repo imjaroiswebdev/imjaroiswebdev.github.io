@@ -1,0 +1,56 @@
+:root {
+/* colors */
+  --primary-color:        #E30021;
+  --primary-color-dark:   #D32F2F;
+  --primary-color-light:  #ffe8e9;
+  --accent-color:         #F5BF3F;
+  --primary-text-color:   #212121;
+  --secondary-text-color: #727272;
+  --primary-color-text:   #FFFFFF;
+  --divider-color:        #B6B6B6;
+
+/* fonts */
+  --montserrat: 'Montserrat', sans-serif;
+  --inconsolata: 'Inconsolata', monospace;
+
+/* breakpoints */
+  --phone-port: 320px;
+  --phone-land: 480px;
+  --tablet-port: 768px;
+  --tablet-port: 960px;
+  --mouse-keyb: 1170px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-width: var(--phone-port);
+  font-size: 100%;
+  line-height: 1;
+  font-family: var(--montserrat);
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d32f2f' fill-opacity='0.06'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  margin: 30px auto 0;
+  padding: 0 15px 10px;
+}
+
+h1, h2, h3, h5, p, li, a, span {
+  font-family: var(--montserrat);
+}
+
+/* Helper classes */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+}
+
+.ma {
+  margin-left: auto;
+  margin-right: auto;
+}
