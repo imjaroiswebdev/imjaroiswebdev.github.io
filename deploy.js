@@ -7,7 +7,7 @@ const chalk = require('chalk')
 const ghPagesConfig = {
   branch: 'master',
   cloneDir: '.gh-pages-cache',
-  message: `[${(new Date()).toLocaleDateString()}]: Auto-generated commit for deploying site`,
+  message: `[${(new Date()).toLocaleDateString('es-419', { timeZone: 'America/Santiago' })}]: Auto-generated commit for deploying site`,
   add: true
 }
 
@@ -46,4 +46,10 @@ deployToMaster()
     cli.spinner(chalk.green.bold('✓ ') + '… Site published to Github Pages!\n', true)
 
     process.exit(0)
+  })
+  .catch(err => {
+    cli.spinner(chalk.red.bold('✗ ') + '… An error ocurred during the deployment process!\n', true)
+
+    console.error(err)
+    process.exit(1)
   })
