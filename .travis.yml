@@ -10,4 +10,4 @@ deploy:
   provider: script
   script: yarn deploy
   on:
-    branch: 'site-source'
+    branch: site-src
