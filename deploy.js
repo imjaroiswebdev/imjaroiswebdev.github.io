@@ -7,7 +7,7 @@ const ghPagesConfig = {
   branch: 'master',
   cloneDir: '.site-src-cache',
   repo: `https://${process.env.GH_TOKEN}@github.com/imjaroiswebdev/imjaroiswebdev.github.io.git`,
-  message: `[${(new Date()).toLocaleDateString('es-419', { timeZone: 'America/Santiago' })}]: Auto-generated commit for deploying site`,
+  message: `[${(new Date()).toLocaleString('es-419', { timeZone: 'America/Santiago' })}]: Auto-generated commit for deploying site`,
   add: true
 }
 
