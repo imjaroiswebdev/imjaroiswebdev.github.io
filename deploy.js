@@ -6,7 +6,7 @@ const chalk = require('chalk')
 
 const ghPagesConfig = {
   branch: 'master',
-  cloneDir: '.gh-pages-cache',
+  cloneDir: '.site-src-cache',
   message: `[${(new Date()).toLocaleDateString('es-419', { timeZone: 'America/Santiago' })}]: Auto-generated commit for deploying site`,
   add: true
 }
