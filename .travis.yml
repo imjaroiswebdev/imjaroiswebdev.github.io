@@ -1,10 +1,9 @@
 language: node_js
 node_js:
   - node
-env:
-  global:
-    - secure: >-
-        ZbU4Zdmg2Rj/FWONS4nbVzSw5xkvWeVPTKwcoF7hgl3Ypc902ZezpQef7nG1eCnX4qcNGudLUakJbECTSccl2Q4RvTBEEqVpYZ0uWU2MtuHg7gm3FoAIA0G8/xknQGvO4UUoYle8fYx16031L7QHpBzrIlS82s8Z3xuHQJjZGqLc2oPYVKuFbhkKd8KekfXfCLGbykeYNR0bBOFIQ5yO1jk+hchT2EZ2kGjoQ2HWx9r4iMKlDoscmSn6oyrF/7e2Gi3bQV2o9yWqh8o9oM+KF7B4jG8xvrHQ8rwNXih9eblUojEM/diPUx3wvk46y9vf87H2V6Q6KfBAXwuB5iW5CW8muQZXTdhKq/U8CJ4n6d1NAkoJmzR8ueEol5XO/fJAz/4qxdIRCzrgHEkHmdco/jehQWxO88S+kkav3LS5z7q81pSCtoeQ+xiAqrW0wOxYt+6ogDA3j7P5qv2Zt94IH7+Wbq3xSi9uuH7bFZZL1uoMV8qVCc9qYzlfcpRn7hGlZZZrXsSkn0bAKMkYmpZl1Gepdn+YwbmYkGlUkQAVugPpRNeeaXksRhRcwKQX9Okplt37Ntxm1paskEkWRZSHDevl6SV5uIqH/wCwagqOzAyvhQq3bg7Kb8saGy/my2Q5u0KUSiT3UV3f4Kas7QcETE2JBpfEyPYBU7U1qn1GVlU=
+before_script:
+  - 'git config --global user.name "Travis CI"'
+  - 'git config --global user.email "imjaroiswebdev@gmail.com"'
 deploy:
   skip_cleanup: true
   provider: script
